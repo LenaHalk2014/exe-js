@@ -1,0 +1,25 @@
+{
+  "name": "jsexel",
+  "version": "1.0.0",
+  "description": "jsapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LenaHalk2014/exe-js.git"
+  },
+  "author": "LenaHalk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LenaHalk2014/exe-js/issues"
+  },
+  "homepage": "https://github.com/LenaHalk2014/exe-js#readme",
+  "devDependencies": {
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
