@@ -9,7 +9,7 @@ module.exports = {
     mode: "development",
     entry: "./index.js",
     output: {
-        filename: "bundle.[hush].js",
+        filename: "bundle.[hash].js",
         path: path.resolve(__dirname, "dist")
     },
     resolve: {
@@ -31,7 +31,7 @@ module.exports = {
             }],
         }),
         new MiniCssExtractPlugin({
-            filename: "bundle.[hush].css"
+            filename: "bundle.[hash].css"
         })
     ],
     module: {
