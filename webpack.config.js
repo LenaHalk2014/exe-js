@@ -3,11 +3,19 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HTMLWebpackPlugin = require("html-webpack-plugin")
 const CopyPlugin = require("copy-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const loader = require('sass-loader')
+
+let isProd = process.env.NODE_ENV === 'poduction';
+let isDev = !isProd;
+
+console.log(`IS PROD`, isProd)
+console.log(`IS DEV`, isDev)
 
 module.exports = { 
+    target: 'web',
     context: path.resolve(__dirname, "src"), 
     mode: "development",
-    entry: "./index.js",
+    entry: ['./index.js', './scss/index.scss'],
     output: {
         filename: "bundle.[hash].js",
         path: path.resolve(__dirname, "dist")
@@ -18,6 +26,12 @@ module.exports = {
             "@": path.resolve(__dirname, "src"),
             '@core': path.resolve(__dirname, "src/core"), 
         }
+    },
+    devtool: isDev ? `source-map` : false,
+    devServer: {
+        port: 3000,
+        hot: isDev,
+        static: true
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -41,7 +55,7 @@ module.exports = {
                 MiniCssExtractPlugin.loader,
                 "css-loader",
                 "sass-loader"
-            ]
+            ],
         }]
     }
 }
