@@ -1,3 +1,3 @@
-import "./styles/index.scss";
-
-console.log("+++++")
+import './styles/index.scss';
+const x = '+++++';
+console.log(x);
