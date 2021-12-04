@@ -1,6 +1,60 @@
 @import "variables";
 @import "mixins";
 
-.excel__table {
+.table {
+    padding: 5px;
+
+    &__row {
+        display: flex;
+        justify-content: left;
+        height: 30px; 
+        box-sizing: border-box; 
+    }
+
+    &__data-number {
+        height: 30px;
+        width: 50px;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        box-sizing: border-box;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    &__data-titles,
+    &__data-wrapper {
+        display: flex;
+        justify-content: left;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+
+    &__data-wrapper {
+        border-top: none;
+    }
+
+    &__row-decore {
+        height: 30px;
+        width: 50px;
+        border-left: 1px solid black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    &__data-title,
+    &__data {
+        height: 30px;
+        width: 100px;
+        border-left: 1px solid black;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+        box-sizing: border-box;
+
+        &:last-child {
+            border-right: 1px solid black;
+        }
+    }
 
 }

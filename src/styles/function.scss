@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+
+
+.function {
+    display: flex;
+    justify-content:start;
+    width: 100%;
+
+    &_icon-fx {
+        margin-left: 10px;
+        margin-top: 20px;
+        background-image: url('../img/icon-fx.png');
+        height: 40px;
+        width: 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
