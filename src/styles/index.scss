@@ -3,8 +3,12 @@
 
 @import "header";
 @import "toolbar";
-@import "formula";
+@import "function";
 @import "table";
+@import "b-button";
+@import "b-input";
+
+@import "dashboard";
 
 * {
   margin: 0;

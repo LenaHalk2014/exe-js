@@ -1,6 +1,9 @@
 @import "variables";
 @import "mixins";
 
-.excel__toolbar {
-
+.toolbar {
+    display: flex;
+    justify-content:space-between;
+    height: 70px;
+    position: relative;
 }

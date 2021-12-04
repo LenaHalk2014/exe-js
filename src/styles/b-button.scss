@@ -1,0 +1,88 @@
+@import "variables";
+@import "mixins";
+
+.b-button {
+    &_position {
+        &_header {
+            height: 48px;
+             width: 48px;
+             border: 2px solid black;
+             border-radius: 4px;
+             background-size: contain;
+             background-repeat: no-repeat;
+        }
+        &_toolbar {
+            top: 10px;
+            height: 40px;
+            width: 40px;
+            border: 2px solid rgb(224, 240, 8);
+            border-radius: 4px;
+            margin-right: 10px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+
+            &:hover {
+                border-color: rgb(7, 7, 7);
+                box-shadow: 0 0 10px #1302ff;
+                height: 50px;
+                width: 50px;
+            }
+        }  
+    }
+    
+    &_type {
+        &_exit {
+            margin-left: 10px;
+            background-image: url('../img/exit.png');
+        }
+        &_delete {
+            background-image: url('../img/delete.png');
+        }
+        &_left {
+            background-image: url('../img/left.png');
+            left: 10px;
+        }
+        &_centre {
+            background-image: url('../img/centre.png');
+            left: 60px;
+        }
+        &_right {
+            background-image: url('../img/right.png');
+            left: 110px;
+        }
+        &_fatty {
+            background-image: url('../img/fatty.png');
+            left: 160px;
+        }
+        &_italics {
+            background-image: url('../img/italics.png');
+            left: 210px;
+        }
+        &_crossed-out {
+            background-image: url('../img/crossed-out.png');
+            left: 260px;
+        }
+        &_underlined {
+            margin-right: 500px;
+            background-image: url('../img/underlined.png');
+            left: 310px;
+        }
+        &_create-new-table {
+            height: 60px;
+            width: 70px;
+            border: 1px solid rgb(248, 246, 246);
+            display: block;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-left: 150px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            text-align: center;
+            background-color: rgb(246, 246, 246);
+            font-weight: bold;
+
+
+        }
+    }
+}
